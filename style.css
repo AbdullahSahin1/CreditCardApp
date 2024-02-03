@@ -7,3 +7,38 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+.container{
+    min-height: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: linear-gradient(0deg, #a6c0fe, #f68084);
+    padding-bottom:60px ;
+}
+.container form{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 160px;
+    width: 600px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.container form .input-box{
+    margin-top:20px ;
+}
+
+.container form .input-box span{
+    display: block;
+    color: #999;
+    padding-bottom:5px ;
+}
+.container form .input-box input,
+.container form .input-box select {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    color: #444;
+}
