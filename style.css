@@ -5,3 +5,44 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+.container{
+    min-height: 100vh;
+    background: linear-gradient(45deg , #30cfd0, #330867);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+.container form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+
+.container form .inputBox{
+    margin-top: 20px;
+}
+
+.container form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+
+.container form .inputBox input,
+.container form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.container form .flexbox{
+    display: flex;
+    gap:15px;
+}
