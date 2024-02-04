@@ -19,3 +19,16 @@ document.querySelector('.cvv-input').onmouseenter = () =>{
     document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
     document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
 }
+document.querySelector('.cvv-input').onmouseleave = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+}
+
+document.querySelector('.cvv-input').oninput = () =>{
+    document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+}
+
+const button = document.querySelector('.submit-btn');
+button.addEventListener("click",()=>{
+    alert('Kart Bilgileriniz Başarıyla Kaydedildi')
+})
